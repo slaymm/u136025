@@ -78,7 +78,18 @@
 
 						<div class="copyright">
 							<ul class="menu">
-								<li>&copy; Untitled. All rights reserved</li><li>E-mail: <a>sttten@mail.ru</a></li>
+								<a>
+								<li>&copy; Copyright. </li><li>E-mail: <?$APPLICATION->IncludeComponent(
+											"bitrix:main.include",
+											"",
+											Array(
+												"COMPONENT_TEMPLATE" => ".default",
+												"AREA_FILE_SHOW" => "file",
+												"AREA_FILE_SUFFIX" => "inc",
+												"EDIT_TEMPLATE" => "",
+												"PATH" => SITE_TEMPLATE_PATH."/include_areas/email.php"
+											)
+										);?></li>
 							</ul>
 						</div>
 
@@ -86,12 +97,12 @@
 
 		</div>
 
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/include/js/jquery.min.js", true);?>
+<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/include/js/jquery.dropotron.min.js", true);?>
+<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/include/js/skel.min.js", true);?>
+<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/include/js/util.js", true);?>
+<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/include/js/ie/respond.min.js", true);?>
+<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/include/js/main.js", true);?>
 
 	</body>
 </html>

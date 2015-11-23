@@ -6,21 +6,20 @@
  * Time: 12:08
  */
 ?>
-<?if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
-?>
+<?if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();?>
 <?IncludeTemplateLangFile(__FILE__);?>
 <!DOCTYPE HTML>
 <html lang="<?=LANGUAGE_ID?>">
 	<head>
-		<title><?$APPLICATION->ShowTitle();?>Right Sidebar - Arcana by HTML5 UP</title>
+		<title><?$APPLICATION->ShowTitle();?>Library</title>
 		<?$APPLICATION->ShowHead();?>
-
-		<!--[if lte IE 8]><?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/assets/js/ie/html5shiv.js", true);?><![endif]-->
-		<?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/assets/css/main.css",true);?>
-		<?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/assets/css/ie8.css",true);?>
-		<?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/assets/css/ie9.css",true);?>
+		<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/include/js/ie/html5shiv.js", true);?>
+		<?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/include/css/main.css",true);?>
+		<?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/include/css/ie8.css",true);?>
+		<?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/include/css/ie9.css",true);?>
 	</head>
 	<body>
+	<?$APPLICATION->ShowPanel();?>
 		<div id="page-wrapper">
 				<div id="header">
 					<?if(!CSite::InDir('/')):?><a href="/"><?endif;?>

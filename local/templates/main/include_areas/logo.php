@@ -6,4 +6,4 @@
  * Time: 13:16
  */
 ?>
-<img src="<?=SITE_TEMPLATE_PATH;?>/include/logo.png" alt="fgh">
+<img src="<?=SITE_TEMPLATE_PATH;?>/include/logo.png">

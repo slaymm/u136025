@@ -1,9 +1,1 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Андрей
- * Date: 23.11.2015
- * Time: 13:24
- */
-?>
-
+<?php ?><a href="http://mail.ru">sttten@mail.ru</a>
