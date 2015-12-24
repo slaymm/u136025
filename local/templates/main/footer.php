@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: ������
+ * User: ������
  * Date: 23.11.2015
  * Time: 12:08
  */
@@ -17,35 +17,26 @@
 					<div class="container">
 						<div class="row">
 							<section class="3u 6u(narrower) 12u$(mobilep)">
-								<h3>Links to Stuff</h3>
+								<h3>Ссылки на материалы</h3>
 								<ul class="links">
-									<li><a href="#">Mattis et quis rutrum</a></li>
-									<li><a href="#">Suspendisse amet varius</a></li>
-									<li><a href="#">Sed et dapibus quis</a></li>
-									<li><a href="#">Rutrum accumsan dolor</a></li>
-									<li><a href="#">Mattis rutrum accumsan</a></li>
-									<li><a href="#">Suspendisse varius nibh</a></li>
-									<li><a href="#">Sed et dapibus mattis</a></li>
+									<li><a href="orioks.miet.ru">Портфоилио ОРИОКС</a></li>
+									<li><a href="http://vk.com/ivanov_andrey_hmk">Проофиль ВК</a></li>
+									<li><a href="http://orioks.miet.ru/st/resurs/?tpd=2555195&d=1624354">Ресурсы проета</a></li>
+									<li><a href="#">Презентация</a></li>
 								</ul>
 							</section>
 							<section class="3u 6u$(narrower) 12u$(mobilep)">
-								<h3>More Links to Stuff</h3>
+								<h3>Нормативные документы</h3>
 								<ul class="links">
-									<li><a href="#">Duis neque nisi dapibus</a></li>
-									<li><a href="#">Sed et dapibus quis</a></li>
-									<li><a href="#">Rutrum accumsan sed</a></li>
-									<li><a href="#">Mattis et sed accumsan</a></li>
-									<li><a href="#">Duis neque nisi sed</a></li>
-									<li><a href="#">Sed et dapibus quis</a></li>
-									<li><a href="#">Rutrum amet varius</a></li>
+									<li><a href="http://orioks.miet.ru/oroks-miet/upload/ftp/pub/2015/12_3/567be8ff5ac8e/Ustav._Ivanov_Andrey._P31.docx">Устав проекта</a></li>
+									<li><a href="http://acis.mit.edu/acis/sreq/sreq.book.html">Спецификация к ПО АКИС</a></li>
 								</ul>
 							</section>
 							<section class="6u 12u(narrower)">
-								<h3>Get In Touch</h3>
-								<form>
+								<h3>Отправьте отзыв</h3>
 									<div class="row 50%">
 										<div class="6u 12u(mobilep)">
-											<input type="text" name="name" id="name" placeholder="Name" />
+											<input type="text" name="name" id="name" placeholder="Имя" />
 										</div>
 										<div class="6u 12u(mobilep)">
 											<input type="email" name="email" id="email" placeholder="Email" />
@@ -53,13 +44,13 @@
 									</div>
 									<div class="row 50%">
 										<div class="12u">
-											<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+											<textarea name="message" id="message" placeholder="Отзыв" rows="5"></textarea>
 										</div>
 									</div>
 									<div class="row 50%">
 										<div class="12u">
 											<ul class="actions">
-												<li><input type="submit" class="button alt" value="Send Message" /></li>
+												<li><input type="submit" class="button alt" value=Отправить отзыв" /></li>
 											</ul>
 										</div>
 									</div>
