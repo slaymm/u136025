@@ -59,18 +59,70 @@
 						</div>
 					</div>
 
-						<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
-						</ul>
+					<?$APPLICATION->IncludeComponent("bitrix:photo.section", "social_icons", Array(
+						"COMPONENT_TEMPLATE" => ".default",
+						"IBLOCK_TYPE" => "photos",	// Тип инфоблока
+						"IBLOCK_ID" => "31",	// Инфоблок
+						"SECTION_ID" => $_REQUEST["SECTION_ID"],	// ID раздела
+						"SECTION_CODE" => "",	// Код раздела
+						"SECTION_USER_FIELDS" => array(	// Свойства раздела
+						0 => "",
+							1 => "",
+							2 => "",
+							),
+						"ELEMENT_SORT_FIELD" => "sort",	// По какому полю сортируем фотографии
+						"ELEMENT_SORT_ORDER" => "asc",	// Порядок сортировки фотографий в раздел
+						"FILTER_NAME" => "arrFilter",	// Имя массива со значениями фильтра для фильтрации элементов
+						"FIELD_CODE" => array(	// Поля
+						0 => "",
+							1 => "ID",
+							2 => "Название",
+							3 => "Сортировка",
+							4 => "Картинка",
+							5 => "",
+							),
+						"PROPERTY_CODE" => array(	// Свойства
+						0 => "URL",
+							1 => "[URL] Ссылка",
+							2 => "",
+							),
+						"PAGE_ELEMENT_COUNT" => "20",	// Количество элементов на странице
+						"LINE_ELEMENT_COUNT" => "3",	// Количество фотографий, выводимых в одной строке таблицы
+						"SECTION_URL" => "",	// URL, ведущий на страницу с содержимым раздела
+						"DETAIL_URL" => "",	// URL, ведущий на страницу с содержимым элемента раздела
+						"AJAX_MODE" => "N",	// Включить режим AJAX
+						"AJAX_OPTION_JUMP" => "N",	// Включить прокрутку к началу компонента
+						"AJAX_OPTION_STYLE" => "Y",	// Включить подгрузку стилей
+						"AJAX_OPTION_HISTORY" => "N",	// Включить эмуляцию навигации браузера
+						"AJAX_OPTION_ADDITIONAL" => "",	// Дополнительный идентификатор
+						"CACHE_TYPE" => "A",	// Тип кеширования
+						"CACHE_TIME" => "36000000",	// Время кеширования (сек.)
+						"CACHE_FILTER" => "N",	// Кешировать при установленном фильтре
+						"CACHE_GROUPS" => "Y",	// Учитывать права доступа
+						"META_KEYWORDS" => "-",	// Установить ключевые слова страницы из свойства
+						"META_DESCRIPTION" => "-",	// Установить описание страницы из свойства
+						"BROWSER_TITLE" => "-",	// Установить заголовок окна браузера из свойства
+						"SET_TITLE" => "N",	// Устанавливать заголовок страницы
+						"SET_STATUS_404" => "N",	// Устанавливать статус 404, если не найдены элемент или раздел
+						"SET_LAST_MODIFIED" => "N",	// Устанавливать в заголовках ответа время модификации страницы
+						"ADD_SECTIONS_CHAIN" => "N",	// Включать раздел в цепочку навигации
+						"PAGER_TEMPLATE" => ".default",	// Шаблон постраничной навигации
+						"DISPLAY_TOP_PAGER" => "N",	// Выводить над списком
+						"DISPLAY_BOTTOM_PAGER" => "N",	// Выводить под списком
+						"PAGER_TITLE" => "Социальные сети",	// Название категорий
+						"PAGER_SHOW_ALWAYS" => "N",	// Выводить всегда
+						"PAGER_DESC_NUMBERING" => "N",	// Использовать обратную навигацию
+						"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",	// Время кеширования страниц для обратной навигации
+						"PAGER_SHOW_ALL" => "N",	// Показывать ссылку "Все"
+					),
+						false
+					);?>
 
 						<div class="copyright">
 							<ul class="menu">
 								<a>
-								<li>&copy; Copyright. </li><li>E-mail: <?$APPLICATION->IncludeComponent(
+								<li>&copy; Copyright. </li> <li>E-mail:
+										<?$APPLICATION->IncludeComponent(
 											"bitrix:main.include",
 											"",
 											Array(
@@ -80,7 +132,8 @@
 												"EDIT_TEMPLATE" => "",
 												"PATH" => SITE_TEMPLATE_PATH."/include_areas/email.php"
 											)
-										);?></li>
+										);?>
+										</li>
 							</ul>
 						</div>
 
@@ -97,4 +150,3 @@
 
 	</body>
 </html>
-?>
