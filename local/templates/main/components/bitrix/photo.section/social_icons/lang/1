@@ -1,0 +1,8 @@
+<?if (!empty($arResult)):?>
+<ul class="icons">
+	<?foreach($arResult as $key => $arItem):?>
+				<span class="icon"><?$arItem["PICTURE"]["SRC"];?></span></a>
+		</li>
+		<?endforeach;?>
+		</ul>
+<?endif;?>
